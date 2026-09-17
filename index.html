@@ -71,7 +71,7 @@
   <p>This policy explains what information Nalvk LLC ("we," "us"), operator of SQuote, collects and how we use it. It applies to two kinds of people: <strong>App users</strong> (the tradespeople who sign up for and use SQuote to run their business) and <strong>customers</strong> (the App user's own customers, who receive quotes).</p>
 
   <h3>What we collect</h3>
-  <p><strong>From App users:</strong> name, business name and contact details, email, phone, password (handled entirely by Firebase Authentication — we never see or store your raw password), and billing information (handled entirely by Stripe — we never see or store your card number).</p>
+  <p><strong>From App users:</strong> name, business name and contact details, email, phone, password (handled entirely by Firebase Authentication — we never see or store your raw password), and billing information — handled entirely by Stripe for web and Android subscriptions, or by Apple for subscriptions purchased through the iOS App Store — we never see or store your card number either way.</p>
   <p><strong>About customers:</strong> only what's needed to deliver a quote — name, and an email address or phone number (at least one, to send it). We deliberately do not collect a customer's home address or other details as part of the quote flow, even though our database has optional fields reserved for a possible future customer-management feature.</p>
 
   <h3>How we use it</h3>
@@ -91,7 +91,8 @@
     <tr><td>Supabase</td><td>Database hosting</td></tr>
     <tr><td>SendGrid (Twilio)</td><td>Delivering quote and account emails</td></tr>
     <tr><td>Twilio</td><td>Delivering quote SMS messages</td></tr>
-    <tr><td>Stripe</td><td>Subscription billing and payment processing</td></tr>
+    <tr><td>Stripe</td><td>Subscription billing and payment processing (web and Android)</td></tr>
+    <tr><td>Apple</td><td>Subscription billing and payment processing (iOS App Store)</td></tr>
     <tr><td>Anthropic</td><td>AI assistance for drafting quotes from voice/text input</td></tr>
   </table>
 
@@ -122,7 +123,7 @@
   <p>You're responsible for keeping your account credentials secure and for all activity under your account. You must provide accurate information when signing up.</p>
 
   <h3>Subscriptions &amp; billing</h3>
-  <p>SQuote offers a free plan with limited usage and paid subscription plans with expanded usage, billed through Stripe. Fees are described at the time of purchase. You may cancel a paid subscription at any time; cancellation takes effect at the end of the current billing period unless stated otherwise.</p>
+  <p>SQuote offers a free plan with limited usage and paid subscription plans with expanded usage, billed through Stripe (web and Android) or through Apple's In-App Purchase system (iOS). Fees are described at the time of purchase. You may cancel a paid subscription at any time; cancellation takes effect at the end of the current billing period unless stated otherwise. A subscription purchased through the iOS App Store is managed and cancelled through your Apple ID account settings, not through SQuote directly.</p>
 
   <h3>Acceptable use</h3>
   <p>You agree not to use SQuote to send unlawful, fraudulent, or unsolicited messages, or to send SMS/email to anyone who hasn't given you permission to contact them for the purpose of quoting them a job.</p>
@@ -148,6 +149,6 @@
   <h3>Contact</h3>
   <p>Questions about these terms: <a href="mailto:fastquoteapp@gmail.com">fastquoteapp@gmail.com</a></p>
 
-  <footer>Last updated: August 2026</footer>
+  <footer>Last updated: September 2026</footer>
 </body>
 </html>
